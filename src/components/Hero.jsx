@@ -14,6 +14,13 @@ function Hero() {
       >
         <source src="src/assets/food_video.mp4" type="video/mp4" />
       </video>
+      <div className={classes.content}>
+        <div className={classes.content_animation}>
+          <h1>Order Your favorite Food!</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>Explore Menu</button>
+        </div>
+      </div>
     </div>
   );
 }
