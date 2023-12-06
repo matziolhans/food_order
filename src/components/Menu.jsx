@@ -1,5 +1,6 @@
-import classes from "./Menu.module.css"
+import classes from "./Menu.module.css";
 import { useState } from "react";
+import Meal from "./Meal";
 
 function Menu() {
   const [meals, seatMenu] = useState([
@@ -9,7 +10,11 @@ function Menu() {
 
   return (
     <>
-      <ul className={classes.menu_container}>{meals.map((meal) => <li key={meal.id}>{meal.name}</li>)}</ul>
+      <ul className={classes.menu_container}>
+        {meals.map((meal) => (
+          <Meal image={meal.image} name={meal.name} price={meal.price} />
+        ))}
+      </ul>
     </>
   );
 }
