@@ -15,7 +15,7 @@ function Menu() {
     <>
       <ul className={classes.menu_container}>
         {meals.map((meal) => (
-          <Meal image={meal.image} name={meal.name} price={meal.price} />
+          <Meal key={meal.id} image={meal.image} name={meal.name} price={meal.price} />
         ))}
       </ul>
     </>
