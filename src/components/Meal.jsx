@@ -10,7 +10,7 @@ function Meal({ image, name, price }) {
           <h2>{name}</h2>
           <p>{price}€</p>
         </div>
-        <button>Add to Cart</button>
+        <button>Add</button>
       </div>
     </li>
   );
