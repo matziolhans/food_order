@@ -1,6 +1,15 @@
 import classes from "./Meal.module.css";
+import { useContext } from "react";
+import CartContext from "../store/CartContext";
 
-function Meal({ image, name, price }) {
+function Meal({ id, image, name, price }) {
+
+  const context = useContext(CartContext)
+
+  function handleAddMeal() {
+    context.addItem({ id, image, name, price })
+  }
+
   return (
     <li className={classes.card}>
       <img src={image} alt={name} />
@@ -10,7 +19,7 @@ function Meal({ image, name, price }) {
           <h2>{name}</h2>
           <p>{price}€</p>
         </div>
-        <button>Add</button>
+        <button onClick={handleAddMeal}>Add</button>
       </div>
     </li>
   );
