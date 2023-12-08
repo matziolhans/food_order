@@ -2,14 +2,19 @@ import Hero from "./components/Hero";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import { CartProvider } from "./store/CartContext";
+import { UserProgressProvider } from "./store/UserProgressContext";
+import Cart from "./components/Cart";
 
 function App() {
   return (
-    <CartProvider>
-      <Header />
-      <Hero />
-      <Menu />
-    </CartProvider>
+    <UserProgressProvider>
+      <CartProvider>
+        <Header />
+        <Hero />
+        <Menu />
+        <Cart />
+      </CartProvider>
+    </UserProgressProvider>
   );
 }
 
