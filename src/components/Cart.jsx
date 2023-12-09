@@ -21,6 +21,10 @@ function Cart() {
   function handleClose() {
     userProgressCtx.hideCart();
   }
+
+  function handleCheckout() {
+    userProgressCtx.showCheckout();
+  }
  
   return (
     <Modal
@@ -48,7 +52,7 @@ function Cart() {
       <div className={classes.footer}>
         <div className={classes.navigation}>
           <button onClick={handleClose}>Close</button>
-          {cartCtx.items.length > 0 && <button>Checkout</button>}
+          {cartCtx.items.length > 0 && <button onClick={handleCheckout}>Checkout</button>}
         </div>
         <p>Price: {price}€</p>
       </div>
