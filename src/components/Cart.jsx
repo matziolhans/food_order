@@ -30,6 +30,7 @@ function Cart() {
     <Modal
       open={userProgressCtx.userProgress === "cart"}
       className={classes.modal}
+      onClose={handleClose}
     >
       <h2>Cart</h2>
       <div className={classes.order}>

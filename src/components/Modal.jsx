@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import classes from "./Modal.module.css"
 
-function Modal({ children, open, className = ""}) {
+function Modal({ children, open, className = "", onClose}) {
   const dialog = useRef();
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function Modal({ children, open, className = ""}) {
   }, [open]);
 
   return createPortal(
-    <dialog ref={dialog} className={`${classes.modal} ${className}`}>{children}</dialog>,
+    <dialog ref={dialog} className={`${classes.modal} ${className}`} onClose={onClose}>{children}</dialog>,
     document.getElementById("modal")
   );
 }
