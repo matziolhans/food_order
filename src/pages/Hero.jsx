@@ -1,5 +1,7 @@
 import classes from "./Hero.module.css";
 
+import foodVideo from "../assets/food_video.mp4"
+
 function Hero({scrollToMenu}) {
   return (
     <div className={classes.hero}>
@@ -12,7 +14,7 @@ function Hero({scrollToMenu}) {
         loading="lazy"
         className={classes.hero_video}
       >
-        <source src="src/assets/food_video.mp4" type="video/mp4" />
+        <source src={foodVideo} type="video/mp4" />
       </video>
       <div className={classes.content}>
         <div className={classes.content_animation}>
