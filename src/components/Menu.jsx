@@ -10,6 +10,7 @@ const Menu = forwardRef((props, ref) => {
     { id: "3", name: "Pizza", price: "15", image: "src/assets/Pizza.jpg" },
     { id: "4", name: "Salad", price: "5", image: "src/assets/Salad.jpg" },
     { id: "5", name: "Pasta", price: "10", image: "src/assets/Pasta.jpg" },
+    { id: "6", name: "Soup", price: "7", image: "src/assets/soup.jpg" },
   ]);
 
   return (
