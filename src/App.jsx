@@ -4,6 +4,7 @@ import Menu from "./components/Menu";
 import { CartProvider } from "./store/CartContext";
 import { UserProgressProvider } from "./store/UserProgressContext";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Menu />
         <Cart />
+        <Checkout/>
       </CartProvider>
     </UserProgressProvider>
   );
