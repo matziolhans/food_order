@@ -15,6 +15,7 @@ const Menu = forwardRef((props, ref) => {
 
   return (
     <div ref={ref}>
+      <h2 className={classes.menu_headline}>Menu</h2>
       <ul className={classes.menu_container}>
         {meals.map((meal) => (
           <Meal key={meal.id} id={meal.id} image={meal.image} name={meal.name} price={meal.price} />

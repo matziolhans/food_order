@@ -1,3 +1,11 @@
+.menu_headline {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    border-bottom: 0.3rem solid black;
+}
+
 .menu_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
