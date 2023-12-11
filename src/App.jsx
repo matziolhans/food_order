@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Hero from "./components/Hero";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
@@ -7,12 +8,18 @@ import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 
 function App() {
+  const menuRef = useRef(null);
+
+  const scrollToMenu = () => {
+    menuRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <UserProgressProvider>
       <CartProvider>
         <Header />
-        <Hero />
-        <Menu />
+        <Hero scrollToMenu={scrollToMenu} />
+        <Menu ref={menuRef} />
         <Cart />
         <Checkout/>
       </CartProvider>

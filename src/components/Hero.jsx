@@ -1,6 +1,6 @@
 import classes from "./Hero.module.css";
 
-function Hero() {
+function Hero({scrollToMenu}) {
   return (
     <div className={classes.hero}>
       <div className={classes.overlay}></div>
@@ -18,7 +18,7 @@ function Hero() {
         <div className={classes.content_animation}>
           <h1>Order Your favorite Food!</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <button>Explore Menu</button>
+          <button onClick={scrollToMenu}>Explore Menu</button>
         </div>
       </div>
     </div>
