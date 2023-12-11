@@ -16,7 +16,7 @@ function Hero({scrollToMenu}) {
       </video>
       <div className={classes.content}>
         <div className={classes.content_animation}>
-          <h1>Order Your favorite Food!</h1>
+          <h1>Order Your Favorite Food!</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <button onClick={scrollToMenu}>Explore Menu</button>
         </div>
