@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import Hero from "./components/Hero";
+import Hero from "./pages/Hero";
 import Header from "./components/Header";
-import Menu from "./components/Menu";
+import Menu from "./pages/Menu";
 import { CartProvider } from "./store/CartContext";
 import { UserProgressProvider } from "./store/UserProgressContext";
 import Cart from "./components/Cart";

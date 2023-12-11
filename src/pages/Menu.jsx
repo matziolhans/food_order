@@ -1,6 +1,6 @@
 import classes from "./Menu.module.css";
 import { useState } from "react";
-import Meal from "./Meal";
+import Meal from "../components/Meal";
 import { forwardRef } from "react";
 
 const Menu = forwardRef((props, ref) => {
