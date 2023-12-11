@@ -7,7 +7,7 @@ function Header() {
   const cartCtx = useContext(CartContext);
   const userProgressCtx = useContext(UserProgressContext)
 
-  function handleShowCard() {
+  function handleShowCart() {
     userProgressCtx.showCart();
   }
 
@@ -18,7 +18,7 @@ function Header() {
   return (
     <header className={classes.header}>
       <h1>Food Order App</h1>
-      <button onClick={handleShowCard}>Cart({totalItems})</button>
+      <button onClick={handleShowCart}>Cart({totalItems})</button>
     </header>
   );
 }
